@@ -272,10 +272,12 @@ ul li a{
     color: cornsilk;
     top: 230vh;
     align-items: center;
+    text-decoration: none;
 }
 .dots{
     position: relative;
 }
+
 
 /* Mobile style*/
 @media (max-width: 650px){
