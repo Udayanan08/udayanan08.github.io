@@ -274,6 +274,10 @@ ul li a{
     align-items: center;
     text-decoration: none;
 }
+.contact_container a{
+    text-decoration: none;
+    color: cornsilk;
+}
 .dots{
     position: relative;
 }
