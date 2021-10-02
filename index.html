@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="glider.min.css">
+</head>
+<body>
+    <header>  
+        <div id="background1"></div>
+        <ul class="nav_link">
+            <div id="logo">       
+                <a href="#"><img src="images/logo.png" class="logo"></a>
+            </div>
+            <div id="navelement">
+                <li><a  class="active" href="#about">About</a></li>
+                <li><a  href="#activities">Activities</a></li>
+                <li><a  href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </header>
+    
+    <div class="container">
+        <div class="leftarrow">
+            <img src="images/Arrow 1.png">
+        </div>
+        <div class="namebox">
+            <h1 id="name">UDAYANAN T</h1>
+            <h3 id="designation">Mechatronics Engineer</h3>
+            <p id="quote1">Look doesn’t matter</p>
+        </div>
+        <div class="rightarrow">
+            <img src="images/Arrow 2.png">
+        </div>
+    </div>
+
+    <div class="quote">
+        <p>Devote Yourself to What you love...</p>
+    </div>
+
+
+    <div id="about" class="about_container">
+        <div  class="about">
+            <p>ABOUT</p>
+        </div>
+        <div class="about_content">
+            <p>Grew up in Karaikudi, Tamil Nadu, India.
+                I completed my Bachelor’s degree in Mechanical  Engineering and 
+                I completed my master’s degree in Mechatronics at Madras Institute
+                of Technology, Chennai and secured First class with Distinction. 
+                Apart from curricular activities, I am an drawing artist, flautist (car-
+                natic style).
+                Good experience in Controls, IoT, Robotics, Artificial Intelligence,
+                Micro-controller programming (PIC, STM32, Atmega), computer
+                vision, Image processing.
+                Co-ordinated a Hands-on workshop on Atmega microncontroller
+                during my master’s program.
+                Had experience in programming Raspberry PI controller, Node MCU
+                and Arduino UNO.</p>
+        </div>
+    </div>
+    
+    <div id="activities" class="activities_container">
+        <div  class="activities">
+            <p>ACTIVITIES</p>
+        </div>
+        <div class="activities_scroll">
+            <div class="left_arrow">
+                    <img src="images/left_arrow.png">
+            </div>
+            <div class="gliding_activities">
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/robot.png">
+                                <div class="activities_details">
+                                    <h1>Photo Sensing and Obstacle Avoiding Robot</h1>
+                                    <p> Dynamically navigate towards 
+                                        the brightest area using photo resistors and 
+                                        it can avoid obstacles using ultrasonic sensor 
+                                        while navigating towards destination</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/activity2.png">
+                                <div class="activities_details">
+                                    <h1>Live Video Processing GUI using tkinter                                    </h1>
+                                    <p> Features:      
+                                            Colour conversion,
+                                            Optical Character Recognition,
+                                            Face Identification.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/activity3.png">
+                                <div class="activities_details">
+                                    <h1>Multi Gas Sensor Battery Operated Nodes</h1>
+                                    <p>Features: 
+                                        runs 24-7 (battery up to 5 hrs),
+                                        Monitors Indoor environment,
+                                        Upload the data every 10 s,
+                                        Analyzes CO2, Dust, Temp and Humidity,
+                                        Magnetic clamp at bottom.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/activity4.png">
+                                <div class="activities_details">
+                                    <h1>Dynamic Webserver showing
+                                        Real-Time pollution Data</h1>
+                                    <p> Features: 
+                                        runs 24-7,
+                                        Progress bar with different datas from different sensor nodes,
+                                        Graphical view to analyze the trend,
+                                        data can be readily downloadable.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="right_arrow">
+                    <img src="images/right_arrow.png">
+            </div>
+            
+        </div>
+        <div role="tablist" class="dots_container">
+            <div class="dots" ></div>
+        </div>
+    </div>
+    <div id="contact" class="contact_container">
+        <h2>Linked In</h2>
+        <h2>udayanan08@gmail.com</h2>
+        <h2>Grab Cad</h2>
+    </div>
+    <script src="glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector(".gliding_activities"),{
+            slidesToShow: 1,
+            dots: '.dots',
+            draggable: true,
+            arrows:{
+                prev: '.left_arrow',
+                next: '.right_arrow',
+            },
+        });
+    </script>
+    <script src="web.js"></script>
+</body>
+</html>
