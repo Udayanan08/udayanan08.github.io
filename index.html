@@ -17,7 +17,7 @@
             </div>
             <div id="navelement">
                 <li><a  class="active" href="#about">About</a></li>
-                <li><a  href="#activities">Activities</a></li>
+                <li><a  href="#recent_activities">Activities</a></li>
                 <li><a  href="#contact">Contact</a></li>
             </div>
         </ul>
@@ -63,9 +63,84 @@
         </div>
     </div>
     
+    <div id="recent_activities" class="recent_activities_container">
+        <div  class="activities">
+            <p>RECENT ACTIVITIES</p>
+        </div>
+        <div class="activities_scroll">
+            <div class="recent_left_arrow">
+                    <img src="images/left_arrow.png">
+            </div>
+            <div class="recent_gliding_activities">
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/rrt.gif">
+                                <div class="activities_details">
+                                    <h1>Rapidly Exploring Random Tree (RRT)</h1>
+                                    <p>Rapdily Exploring Random Tree, a popular
+                                        path finding algorithm, is visualized using
+                                        python and pygame.
+                
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/a_star.gif">
+                                <div class="activities_details">
+                                    <h1>A* Path Finding Algorithm - Visualization</h1>
+                                    <p> A*, popularly used robot path finding 
+                                        algorithm, is visualized using python ang pygame.<br>
+                                        Algorithm:
+                                            F(n) = G(n) + H(n)        <br>        
+                                            H(n) - Heuristics (Euclidean Distance)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="gliding_container">
+                    <div class="activities_box">
+                        <div class="activities_inborder">
+                            <div class="activities_content">
+                                <img id="activitiesimg" src="images/dijkstra.gif">
+                                <div class="activities_details">
+                                    <h1>Dijkstra's Algorithm - Visualization </h1>
+                                    <p> Dijkstra, a popular path finding algorithm,
+                                        is visualized using python and pygame.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+
+            <div class="recent_right_arrow">
+                    <img src="images/right_arrow.png">
+            </div>
+            
+        </div>
+        <div role="tablist" class="dots_container">
+            <div class="recent_dots" ></div>
+        </div>
+    </div>
+
+
     <div id="activities" class="activities_container">
         <div  class="activities">
-            <p>ACTIVITIES</p>
+            <p>PAST ACTIVITIES</p>
         </div>
         <div class="activities_scroll">
             <div class="left_arrow">
@@ -157,12 +232,21 @@
         </div>
     </div>
     <div id="contact" class="contact_container">
-        <a href="https://www.linkedin.com/in/udayanant08/"><h2>Linked In</h2></a>
+        <a href="https://www.linkedin.com/in/udayanant08/"> <h2>Linked In</h2></a>    
         <h2>udayanan08@gmail.com</h2>
         <a href="https://grabcad.com/udayanan.t-1"><h2>Grab Cad</h2></a>
     </div>
     <script src="glider.min.js"></script>
     <script>
+        new Glider(document.querySelector(".recent_gliding_activities"),{
+            slidesToShow: 1,
+            dots: '.recent_dots',
+            draggable: true,
+            arrows:{
+                prev: '.recent_left_arrow',
+                next: '.recent_right_arrow',
+            },
+        });
         new Glider(document.querySelector(".gliding_activities"),{
             slidesToShow: 1,
             dots: '.dots',
@@ -172,6 +256,7 @@
                 next: '.right_arrow',
             },
         });
+        
     </script>
     <script src="web.js"></script>
 </body>
