@@ -6,6 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    position: absolute;
     font-family: calibri;
     overflow-x: hidden;
 }
@@ -33,6 +34,7 @@ body{
     height: 100vh;
     background-color: #ffd4b0;
     z-index: 0;
+    background-size: cover;
 }
 .nav_link{
     position: fixed;
@@ -164,10 +166,19 @@ ul li a{
     padding: 20px 30px;
 }
 
-.activities_container{
+.recent_activities_container{
     position: absolute;
     width: 100vw;
     top: 200vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities_container{
+    position: absolute;
+    width: 100vw;
+    top: 290vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -193,6 +204,16 @@ ul li a{
     padding-left: 5vw;
 }
 .right_arrow{
+    position: relative;
+    top: 30vh;
+    padding-right: 5vw;
+}
+.recent_left_arrow{
+    position: relative;
+    top: 30vh;
+    padding-left: 5vw;
+}
+.recent_right_arrow{
     position: relative;
     top: 30vh;
     padding-right: 5vw;
@@ -236,6 +257,7 @@ ul li a{
     left: 20px;
     width: 280px;
     height: 340px;
+    border-radius: 25px;
 }
 .activities_details{
     position: relative;
@@ -270,7 +292,7 @@ ul li a{
     height: 20vh;
     background-color: #FF8624;
     color: cornsilk;
-    top: 230vh;
+    top: 315vh;
     align-items: center;
     text-decoration: none;
 }
@@ -278,14 +300,19 @@ ul li a{
     text-decoration: none;
     color: cornsilk;
 }
+.recent_dots{
+    position: relative;
+}
 .dots{
     position: relative;
 }
 
 
+
 /* Mobile style*/
 @media (max-width: 650px){
     .container{
+        position: absolute;
         width: auto;
     }
     .leftarrow,.rightarrow{
@@ -318,27 +345,38 @@ ul li a{
     .gliding_container{
         padding-left: 0vw;
         overflow: hidden; 
-        height: 90vh;
+        height: 80vh;
     }
     .activities_box{
         position: relative;
-        width: 80vw;
-        height: 85vh;
+        width: 60vw;
+        height: 80vh;
         left: 6vw;
+        right: 0px;
     }
     .activities_inborder{
         width: 75vw;
         height: 62vh;
         left: 0px;
     }
-    .left_arrow{
-        width: 30px;
-        height: 30px;
+    .left_arrow,.left_arrow img{
+        width: 0px;
+        height: 0px;
         padding-left: 0px;
     }
-    .right_arrow{
-        width: 30px;
-        height: 30px;
+    .right_arrow, .right_arrow img{
+        width: 0px;
+        height: 0px;
+        padding-right: 0px;
+    }
+    .recent_left_arrow,.recent_left_arrow img{
+        width: 0px;
+        height: 0px;
+        padding-left: 0px;
+    }
+    .recent_right_arrow,.recent_right_arrow img{
+        width: 0px;
+        height: 0px;
         padding-right: 0px;
     }
     .activities_content{
@@ -373,7 +411,6 @@ ul li a{
         flex-direction: column;
     }
 }
-
 
 
 
