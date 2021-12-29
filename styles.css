@@ -208,6 +208,15 @@ ul li a{
     top: 30vh;
     padding-right: 5vw;
 }
+.recent_left_arrow,.recent_right_arrow{
+        position: relative;
+        top: 30vh;
+        padding-left: 5vw;
+
+}
+.recent_right_arrow{
+    padding-right: 5vw;
+}
 
 .gliding_container{
     color: rgb(255, 255, 255,0);
@@ -298,8 +307,7 @@ ul li a{
 }
 
 /* Tablet style*/
-@media (min-width:650px) and (max-width: 1025px) {
-
+@media (min-width:650px) and (max-width: 1024px) {
     .namebox{
         width: 400px;
         height: 200px;
