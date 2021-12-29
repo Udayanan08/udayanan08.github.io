@@ -239,9 +239,13 @@
     <script src="glider.min.js"></script>
     <script>
         var width = window.matchMedia( "(max-width: 650px)" );
-        var slides = 1.25
-        if (width.matches){
-            slides = 1.15
+        var width2 = window.matchMedia( "(max-width: 1024px)" );
+        var slides = 1
+        if (width2.matches){
+            slides = 1.2
+            if (width.mathces){
+                slides = 1.15
+            }
         }
         new Glider(document.querySelector(".recent_gliding_activities"),{
             slidesToShow: slides,
