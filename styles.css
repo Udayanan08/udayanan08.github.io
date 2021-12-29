@@ -208,16 +208,6 @@ ul li a{
     top: 30vh;
     padding-right: 5vw;
 }
-.recent_left_arrow{
-    position: relative;
-    top: 30vh;
-    padding-left: 5vw;
-}
-.recent_right_arrow{
-    position: relative;
-    top: 30vh;
-    padding-right: 5vw;
-}
 
 .gliding_container{
     color: rgb(255, 255, 255,0);
@@ -307,7 +297,106 @@ ul li a{
     position: relative;
 }
 
+/* Tablet style*/
+@media (min-width:650px) and (max-width: 1025px) {
 
+    .namebox{
+        width: 400px;
+        height: 200px;
+    }
+    .leftarrowimg,.rightarrowimg{
+        width:250px;
+    }
+    #name{
+        height: 95px;
+        font-size: 55px;
+    }
+    #designation{
+        height: 45px;
+        font-size: 25px;
+    }
+    #quote1{
+        height: 30px;
+        font-size: 15px;
+    }
+    .nav_link #navelement li a{
+        font-size: 25px;
+        margin-right: 40px;
+    }
+    .nav_link{
+        left: 50px;
+        width: calc(100% - 100px);
+        height: 60px;
+    }
+
+    .about_content{
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        font-size: 35px;
+    }
+    .left_arrow,.left_arrow img{
+        display: none;
+    }
+    .right_arrow, .right_arrow img{
+        display: none;
+    }
+    .recent_left_arrow,.recent_left_arrow img{
+        display: none;
+    }
+    .recent_right_arrow,.recent_right_arrow img{
+        display: none;
+    }
+    .gliding_container{
+        padding-left: 0vw;
+        overflow: hidden; 
+        height: 80vh;
+    }
+    .activities_box{
+        position: relative;
+        width: 60vw;
+        height: 80vh;
+        left: 15vw;
+        right: 0px;
+    }
+    .activities_inborder{
+        width: 65vw;
+        height: 62vh;
+        left: 0px;
+    }
+    .activities_content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #activitiesimg{
+        position: relative;
+        width: 55vw;
+        height: 28vh;
+        left: 0.5vw;
+        top: 2vh;
+    }
+    .activities_details{
+        position: relative;
+        top: 5vh;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        width: 55vw;
+        height: 25vh;
+    }
+    .activities_details h1{
+        font-size: 3.5vw;
+    }
+    .activities_details p{
+        font-size: 3vw;
+        padding: 1vh 1vw;
+    }
+    .contact_container{
+        flex-direction: column;
+    }
+}
 
 /* Mobile style*/
 @media (max-width: 650px){
@@ -360,24 +449,16 @@ ul li a{
         left: 0px;
     }
     .left_arrow,.left_arrow img{
-        width: 0px;
-        height: 0px;
-        padding-left: 0px;
+        display: none;
     }
     .right_arrow, .right_arrow img{
-        width: 0px;
-        height: 0px;
-        padding-right: 0px;
+        display: none;
     }
     .recent_left_arrow,.recent_left_arrow img{
-        width: 0px;
-        height: 0px;
-        padding-left: 0px;
+        display: none;
     }
     .recent_right_arrow,.recent_right_arrow img{
-        width: 0px;
-        height: 0px;
-        padding-right: 0px;
+        display: none;
     }
     .activities_content{
         position: relative;
@@ -411,6 +492,5 @@ ul li a{
         flex-direction: column;
     }
 }
-
 
 
