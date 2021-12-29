@@ -25,7 +25,7 @@
     
     <div class="container">
         <div class="leftarrow">
-            <img src="images/Arrow 1.png">
+            <img src="images/Arrow 1.png" class="leftarrowimg">
         </div>
         <div class="namebox">
             <h1 id="name">UDAYANAN T</h1>
@@ -33,7 +33,7 @@
             <p id="quote1">Look doesn’t matter</p>
         </div>
         <div class="rightarrow">
-            <img src="images/Arrow 2.png">
+            <img src="images/Arrow 2.png" class="rightarrowimg">
         </div>
     </div>
 
@@ -238,8 +238,13 @@
     </div>
     <script src="glider.min.js"></script>
     <script>
+        var width = window.matchMedia( "(max-width: 650px)" );
+        var slides = 1.25
+        if (width.matches){
+            slides = 1.15
+        }
         new Glider(document.querySelector(".recent_gliding_activities"),{
-            slidesToShow: 1,
+            slidesToShow: slides,
             dots: '.recent_dots',
             draggable: true,
             arrows:{
@@ -248,7 +253,7 @@
             },
         });
         new Glider(document.querySelector(".gliding_activities"),{
-            slidesToShow: 1,
+            slidesToShow: slides,
             dots: '.dots',
             draggable: true,
             arrows:{
